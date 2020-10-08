@@ -2769,7 +2769,7 @@ service::catalog:
       - eqiad
       - codfw
     port: 443
-    state: production
+    state: lvs_setup
     discovery:
       - dnsdisc: helm-charts
         active_active: true
@@ -2796,7 +2796,7 @@ service::catalog:
       - eqiad
       - codfw
     port: 443
-    state: production
+    state: lvs_setup
     discovery:
       - dnsdisc: releases
         active_active: true
